@@ -1,0 +1,60 @@
+Author: Adrian Atanasov
+PawPrint: asa368
+
+All of my code references are comments with links to the site where i got the code from. Collections will be labeled at initialization with a comment. I would also like to note
+that a lot of the more complicated exception handling is done within the database itself. The application itself will throw exceptions when the query ends
+
+
+1. Object oriented elements that you write the code for: 
+	a.Classes. 
+		SqlGuiCont.java - Controls editor GUI
+		LoginGuiController.java - Controls login GUI
+		ConnectToDatabase.java - Intializes the Database Server Connection
+		ServerConnection.java - Manages the querys to the server including input and output
+		Switchable.java - manages the changing of scenes for the project
+	b.Subclasses. 
+		LoginGuiController.java
+		SqlGuiCont.java
+	c.At least one abstract class
+		Switchable.java
+	d.At least one Interface
+		Initializable
+
+2. Code elements that you utilize: 
+	a.One or more collection classes. 
+
+	  Collections used in the following java classes:
+	  SqlGuiCont.java - Line 41,62
+	  ServerConnection.java - Line 38,39,44,46,50,52
+	  Switchable.Java - Line 26,32,45,60,82
+
+	b.Exception Handling.
+
+	  Exception handling is included in the following locations:
+	  Switchable.Java - Line 48,52
+	  SqlGuiCont.Java - Line 75-77
+	  ConnectToDatabase.Java - Line 34
+	  ServerConnection.Java - Line 57
+
+
+3.The application must have a clearly defined model (as in the M in MVC). 
+	 ServerConnection.java is the main model of the project
+
+
+
+4. The UI must utilize multiple scenes and at least one of the scenes will have the contents of the scene graph changed based on the application state.
+	The program switches from LoginGuiController.FXML to SqlEdit.FXML when you successfully login to the database
+
+
+5. There must be a way to access “About” information that includes information about you and the application.
+	Information page will be on the login GUI (About Button)
+
+
+6. The application must save data and load data. The target for saving/loading data can be files, a network service, and/or a database. 
+	The application can load, add and modify database data.
+
+
+Note: mariadb-java-client-2.5.2.jar needs to be in the project directory so the project does not throw an error, if it for some reason asks for its location, please locate it on your pc.
+
+For database testing, please check the DatabaseInfo.pdf in the project directory, it is the user manual that we created for the database which was our semester long project in c3380. It contains some SQL functions that will work with the Database and it contains the relational model which will help you create some custom ones to test with
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sqlgui.LoginGuiController">
+   <children>
+      <Label layoutX="216.0" layoutY="123.0" prefHeight="17.0" prefWidth="169.0" text="SQL Query Tool v0.1">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="178.0" layoutY="172.0" prefHeight="17.0" prefWidth="63.0" text="Username:" />
+      <TextField fx:id="username" layoutX="257.0" layoutY="167.0" />
+      <Label layoutX="181.0" layoutY="214.0" text="Password:" />
+      <PasswordField fx:id="password" layoutX="257.0" layoutY="209.0" />
+      <Button layoutX="374.0" layoutY="251.0" mnemonicParsing="false" onAction="#handleGoToGui" text="Login" />
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleOpenAbout" text="About" />
+   </children>
+</AnchorPane>
